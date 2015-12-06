@@ -1,0 +1,25 @@
+  <header class="mdl-layout__header is-casting-shadow">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title"><a href="/" style="color: white; text-decoration: none;">{{ site.title }}</a></span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+        <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="/pricing">Pricing</a>
+            <a class="mdl-navigation__link" href="/features">Features</a>
+            <a class="mdl-navigation__link" href="/help">Help</a>
+            <a class="mdl-navigation__link" href="http://localhost:5000/">Log In</a>
+        </nav>
+    </div>
+  </header>
+
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Menu</span>
+    <nav class="mdl-navigation">
+    {% for page in site.pages %}
+      {% if page.title %}
+      <a class="mdl-navigation__link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+      {% endif %}
+    {% endfor %}
+    </nav>
+  </div>

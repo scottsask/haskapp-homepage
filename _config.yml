@@ -1,0 +1,33 @@
+# Site settings
+title: Haskapp
+email: support@haskapp.com
+description: > # this means to ignore newlines until "baseurl:"
+  Nifty description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://haskapp.com" # the base hostname & protocol for your site
+twitter_username: haskapp
+github_username:  haskapp
+
+# Layout settings
+header_type: default  # values [ drawer, default ]
+post_type: highlight    # values [ highlight, default ]
+pagination_type: default  # values [ ops, default ]
+
+more_vert:
+  option1:
+    name: Cool Option 1
+    link: www.myawesomelink.com
+  option2:
+    name: Cool Option 2
+    link: www.myawesomelink.com
+  option3:
+    name: Cool Option 3
+    link: www.myawesomelink.com
+
+disqus: false
+disqus_shortname: ''
+
+# Build settings
+markdown: kramdown
