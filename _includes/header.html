@@ -4,11 +4,11 @@
       <span class="mdl-layout-title"><a href="/" style="color: white; text-decoration: none;">{{ site.title }}</a></span>
       <!-- Add spacer, to align navigation to the right -->
       <div class="mdl-layout-spacer"></div>
-        <nav class="mdl-navigation">
+        <nav class="mdl-navigation mdl-layout--large-screen-only">
             <a class="mdl-navigation__link" href="/pricing">Pricing</a>
             <a class="mdl-navigation__link" href="/features">Features</a>
             <a class="mdl-navigation__link" href="/help">Help</a>
-            <a class="mdl-navigation__link" href="http://localhost:5000/">Log In</a>
+            <a class="mdl-navigation__link" href="http://hello.haskapp.com/user/sign-in">Log In</a>
         </nav>
     </div>
   </header>
@@ -21,5 +21,6 @@
       <a class="mdl-navigation__link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
       {% endif %}
     {% endfor %}
+    <a class="mdl-navigation__link" href="http://hello.haskapp.com/user/sign-in">Log In</a>
     </nav>
   </div>

@@ -1,6 +1,17 @@
+$break-small: 620px;
+
+.logo-text {
+    font-weight: 300;
+    font-size: 112px;
+    margin: 0px;
+    color: white;
+    @media screen and (max-width: $break-small) {
+        font-size: 80px;
+    }
+}
 .cta1 {
   width: 100%;
-  height: 55vh;
+  max-height: 55%;
   background-image: url(/img/cta_bg.jpg);
   flex-shrink: 0;
 }
